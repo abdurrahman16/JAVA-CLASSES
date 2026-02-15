@@ -1,8 +1,21 @@
 public class Main {
-    static void myMethod(String name, int age){
-        System.out.println(name + " is " + age + " years old.");
+    
+    
+    
+    public static int sum(int k){
+        
+        if (k>0){
+            return k+ sum(k-1);
+            
+        }
+        else {
+            return 0;
+        }
     }
+
     public static void main (String[] args){
-        myMethod("John", 25);
+        int result= sum(10);
+        System.out.println(result);
     }
+
 }
