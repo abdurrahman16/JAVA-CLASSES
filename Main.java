@@ -1,12 +1,17 @@
 public class Main {
-    
+// creating Method in Main
+public void carName(){
+    System.out.println("Car Name is: Audi");
 }
-public static void main(String[] args){
-    System.out.println("Countdown");
+public void carPrice(int price){
+    System.out.println("Car Price is: " + price);;
+}
     
-    for(int i=10;i>=1 ;i--){
-        System.out.println(i);
-        
-    }
-    
+    public static void main(String[] args){
+
+        Main carObj = new Main();
+        carObj.carName();
+        carObj.carPrice(50000);
+
+   }
 }
