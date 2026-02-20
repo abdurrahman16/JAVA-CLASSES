@@ -11,7 +11,7 @@ public Main (int ModelYear, String ModelName){
     this.ModelName = ModelName; }
 
 public void CarInfo(){
-    System.out.println(ModelName+" "+ ModelYear);
+    System.out.println(ModelName+" And "+ ModelYear);
     
 }
 
