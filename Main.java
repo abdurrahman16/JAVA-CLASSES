@@ -1,17 +1,25 @@
 public class Main {
-// creating Method in Main
-public void carName(){
-    System.out.println("Car Name is: Audi");
+int ModelYear;
+String ModelName;
+
+public Main (String ModelName){
+    this(2020, ModelName);
+
 }
-public void carPrice(int price){
-    System.out.println("Car Price is: " + price);;
-}
+public Main (int ModelYear, String ModelName){
+    this.ModelYear = ModelYear;
+    this.ModelName = ModelName; }
+
+public void CarInfo(){
+    System.out.println(ModelName+" "+ ModelYear);
     
-    public static void main(String[] args){
+}
 
-        Main carObj = new Main();
-        carObj.carName();
-        carObj.carPrice(50000);
-
-   }
+public static void main(String[] args) {
+    Main car1= new Main("BMW");
+        car1.CarInfo();
+        Main car2 = new Main(2020, "Mercedes");
+        car2.CarInfo();
+  
+}
 }
